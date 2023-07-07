@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import Footer from '../components/footer'
 import { container, heading, navLinks, navLinkItem, navLinkText,footerText } from '../components/layout.module.css'
+
 console.log('container: ', container)
 
 const Layout = ({pageTitle, pageHeading,children}) => {
@@ -16,9 +18,8 @@ const Layout = ({pageTitle, pageHeading,children}) => {
              <h1 className={heading}>{pageHeading}</h1>
              <h3>{pageTitle}</h3>
              {children}
-         <footer className={footerText}>
-             <p>Motopart @2030</p>
-           </footer>
+        
+         <Footer></Footer>
         </main>
         )
     }
